@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VeloCidade — Anúncios de veículos</title>
+<meta name="description" content="VeloCidade, o portal para comprar e anunciar veículos na sua cidade.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="VeloCidade, página inicial">
+      <span class="logo-plate">VC</span>
+      <span class="logo-word">Velo<strong>Cidade</strong></span>
+    </a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="login.html">Entrar</a>
+      <a href="cadastro.html" class="nav-cta">Anunciar meu veículo</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="search-panel" aria-label="Buscar veículos">
+    <div class="container">
+      <h1>Encontre o carro certo, na sua cidade</h1>
+      <p class="lede">Anúncios de particulares perto de você. Filtre por marca, modelo e localização.</p>
+      <form class="search-form" onsubmit="return false;">
+        <div class="field">
+          <label for="marca">Marca</label>
+          <select id="marca" name="marca">
+            <option value="">Todas as marcas</option>
+            <option>Chevrolet</option>
+            <option>Fiat</option>
+            <option>Volkswagen</option>
+            <option>Toyota</option>
+            <option>Honda</option>
+            <option>Hyundai</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="modelo">Modelo</label>
+          <select id="modelo" name="modelo">
+            <option value="">Todos os modelos</option>
+            <option>Onix</option>
+            <option>Argo</option>
+            <option>Gol</option>
+            <option>Corolla</option>
+            <option>Civic</option>
+            <option>HB20</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="cidade">Localização</label>
+          <select id="cidade" name="cidade">
+            <option value="">Todas as cidades</option>
+            <option>Uberlândia - MG</option>
+            <option>Uberaba - MG</option>
+            <option>Araguari - MG</option>
+            <option>São Paulo - SP</option>
+            <option>Belo Horizonte - MG</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="container" aria-label="Últimos anúncios">
+    <div class="section-title">
+      <h2>Últimos anúncios</h2>
+      <p>8 veículos encontrados</p>
+    </div>
+
+    <div class="vehicle-grid">
+
+      <article class="vehicle-card">
+        <a href="veiculo.html" class="card-media">
+          <img src="https://picsum.photos/seed/onix1/480/320" alt="Chevrolet Onix prata, vista frontal">
+          <span class="price-tag">R$ 68.900</span>
+        </a>
+        <div class="card-body">
+          <h3>Chevrolet Onix</h3>
+          <p class="card-meta">2022 · Uberlândia - MG</p>
+          <a href="veiculo.html" class="btn btn-outline btn-small">Ver detalhes</a>
+        </div>
+      </article>
+
+      <article class="vehicle-card">
+        <a href="veiculo.html" class="card-media">
+          <img src="https://picsum.photos/seed/argo2/480/320" alt="Fiat Argo branco, vista frontal">
+          <span class="price-tag">R$ 74.500</span>
+        </a>
+        <div class="card-body">
+          <h3>Fiat Argo</h3>
+          <p class="card-meta">2023 · Araguari - MG</p>
+          <a href="veiculo.html" class="btn btn-outline btn-small">Ver detalhes</a>
+        </div>
+      </article>
+
+      <article class="vehicle-card">
+        <a href="veiculo.html" class="card-media">
+          <img src="https://picsum.photos/seed/gol3/480/320" alt="Volkswagen Gol vermelho, vista frontal">
+          <span class="price-tag">R$ 52.000</span>
+        </a>
+        <div class="card-body">
+          <h3>Volkswagen Gol</h3>
+          <p class="card-meta">2019 · Uberaba - MG</p>
+          <a href="veiculo.html" class="btn btn-outline btn-small">Ver detalhes</a>
+        </div>
+      </article>
+
+      <article class="vehicle-card">
+        <a href="veiculo.html" class="card-media">
+          <img src="https://picsum.photos/seed/corolla4/480/320" alt="Toyota Corolla preto, vista frontal">
+          <span class="price-tag">R$ 138.900</span>
+        </a>
+        <div class="card-body">
+          <h3>Toyota Corolla</h3>
+          <p class="card-meta">2021 · São Paulo - SP</p>
+          <a href="veiculo.html" class="btn btn-outline btn-small">Ver detalhes</a>
+        </div>
+      </article>
+
+      <article class="vehicle-card">
+        <a href="veiculo.html" class="card-media">
+          <img src="https://picsum.photos/seed/civic5/480/320" alt="Honda Civic cinza, vista frontal">
+          <span class="price-tag">R$ 121.400</span>
+        </a>
+        <div class="card-body">
+          <h3>Honda Civic</h3>
+          <p class="card-meta">2020 · Belo Horizonte - MG</p>
+          <a href="veiculo.html" class="btn btn-outline btn-small">Ver detalhes</a>
+        </div>
+      </article>
+
+      <article class="vehicle-card">
+        <a href="veiculo.html" class="card-media">
+          <img src="https://picsum.photos/seed/hb206/480/320" alt="Hyundai HB20 azul, vista frontal">
+          <span class="price-tag">R$ 66.300</span>
+        </a>
+        <div class="card-body">
+          <h3>Hyundai HB20</h3>
+          <p class="card-meta">2022 · Uberlândia - MG</p>
+          <a href="veiculo.html" class="btn btn-outline btn-small">Ver detalhes</a>
+        </div>
+      </article>
+
+      <article class="vehicle-card">
+        <a href="veiculo.html" class="card-media">
+          <img src="https://picsum.photos/seed/onix7/480/320" alt="Chevrolet Onix preto, vista frontal">
+          <span class="price-tag">R$ 71.200</span>
+        </a>
+        <div class="card-body">
+          <h3>Chevrolet Onix</h3>
+          <p class="card-meta">2023 · Uberaba - MG</p>
+          <a href="veiculo.html" class="btn btn-outline btn-small">Ver detalhes</a>
+        </div>
+      </article>
+
+      <article class="vehicle-card">
+        <a href="veiculo.html" class="card-media">
+          <img src="https://picsum.photos/seed/gol8/480/320" alt="Volkswagen Gol branco, vista frontal">
+          <span class="price-tag">R$ 48.700</span>
+        </a>
+        <div class="card-body">
+          <h3>Volkswagen Gol</h3>
+          <p class="card-meta">2018 · Araguari - MG</p>
+          <a href="veiculo.html" class="btn btn-outline btn-small">Ver detalhes</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; 2026 VeloCidade — Portal de anúncios de veículos.</p>
+    <nav aria-label="Links do rodapé">
+      <a href="index.html">Início</a>
+      <a href="login.html">Entrar</a>
+      <a href="cadastro.html">Cadastrar</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

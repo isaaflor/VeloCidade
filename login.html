@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entrar — VeloCidade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="VeloCidade, página inicial">
+      <span class="logo-plate">VC</span>
+      <span class="logo-word">Velo<strong>Cidade</strong></span>
+    </a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="login.html">Entrar</a>
+      <a href="cadastro.html" class="nav-cta">Anunciar meu veículo</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="auth-section">
+    <div class="auth-card">
+      <h1>Entrar</h1>
+      <form class="form" onsubmit="return false;">
+        <div class="field field-full">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+        </div>
+        <div class="field field-full">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" placeholder="Sua senha" required>
+        </div>
+        <div class="field field-full">
+          <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+        </div>
+      </form>
+      <p class="auth-alt">Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; 2026 VeloCidade — Portal de anúncios de veículos.</p>
+    <nav aria-label="Links do rodapé">
+      <a href="index.html">Início</a>
+      <a href="login.html">Entrar</a>
+      <a href="cadastro.html">Cadastrar</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

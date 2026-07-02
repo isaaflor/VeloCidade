@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chevrolet Onix 1.0 Turbo LT 2022 — VeloCidade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="VeloCidade, página inicial">
+      <span class="logo-plate">VC</span>
+      <span class="logo-word">Velo<strong>Cidade</strong></span>
+    </a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="login.html">Entrar</a>
+      <a href="cadastro.html" class="nav-cta">Anunciar meu veículo</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="container vehicle-detail">
+    <div class="gallery">
+      <div class="gallery-main">
+        <img src="https://picsum.photos/seed/onix1/760/540" alt="Chevrolet Onix prata, vista frontal">
+      </div>
+      <div class="gallery-thumbs">
+        <img src="https://picsum.photos/seed/onix1b/200/140" alt="Chevrolet Onix, vista lateral">
+        <img src="https://picsum.photos/seed/onix1c/200/140" alt="Chevrolet Onix, painel interno">
+        <img src="https://picsum.photos/seed/onix1d/200/140" alt="Chevrolet Onix, porta-malas">
+      </div>
+    </div>
+
+    <div class="detail-info">
+      <h1>Chevrolet Onix 1.0 Turbo LT</h1>
+      <p class="price-tag price-tag--lg">R$ 68.900</p>
+      <ul class="spec-list">
+        <li><strong>Marca</strong>Chevrolet</li>
+        <li><strong>Modelo</strong>Onix</li>
+        <li><strong>Ano</strong>2022</li>
+        <li><strong>Cor</strong>Prata</li>
+        <li><strong>Quilometragem</strong>32.500 km</li>
+        <li><strong>Localização</strong>Uberlândia - MG</li>
+      </ul>
+      <p class="description">Veículo de único dono, revisões feitas sempre na concessionária, pneus novos e ar-condicionado gelando. Aceita troca e financiamento. Interior em ótimo estado de conservação, sem avarias na lataria.</p>
+    </div>
+  </section>
+
+  <section class="container interest-form-section" aria-label="Registrar interesse neste veículo">
+    <h2>Tenho interesse neste veículo</h2>
+    <p>Deixe seus dados e uma mensagem. O anunciante verá seu contato ao acessar o portal.</p>
+    <form class="form" onsubmit="return false;">
+      <div class="field">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+      </div>
+      <div class="field">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(34) 90000-0000" required>
+      </div>
+      <div class="field field-full">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem de interesse..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar interesse</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; 2026 VeloCidade — Portal de anúncios de veículos.</p>
+    <nav aria-label="Links do rodapé">
+      <a href="index.html">Início</a>
+      <a href="login.html">Entrar</a>
+      <a href="cadastro.html">Cadastrar</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
